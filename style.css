@@ -1,0 +1,114 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface *{
+    max-width: 1280px;
+    margin: 0;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#FF6A00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.flex {
+    display: flex;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo *{
+    border-radius: 20px;
+}
+
+header  a {
+    color: #4c4b4b;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #FF6A00;
+    transform: scale(1.05);
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #ff9f5a;
+    transform: scale(1.05);
+}
+
+header nav ul li *{
+    padding: 0 40px;
+}
+
+
+/*ESTILO DO TEXTO E IMAGEM*/
+
+section.assunto {
+    padding: 40px 4%;
+}
+
+section.assunto .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.assunto h1 {
+    color: #FF6A00;
+    font-size: 50px;
+}
+
+.assunto h1 span {
+    color: #FFF;
+}
+
+.assunto h1 span {
+    color: #FFF;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img-cartao {
+    display: block;
+    margin: 0 auto;
+    animation: flutuar 2s ease-in-out infinite;
+}
